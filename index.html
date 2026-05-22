@@ -1,55 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - [Your App Name]</title>
-    <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background-color: #f9f9f9; }
-        .container { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        h1 { color: #2c3e50; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        h2 { color: #34495e; margin-top: 30px; }
-        .highlight { background: #e8f4fd; border-left: 4px solid #3498db; padding: 15px; margin: 20px 0; }
-        footer { margin-top: 50px; font-size: 0.9em; color: #7f8c8d; text-align: center; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — smvodela Apps</title>
+  <meta name="description" content="Privacy policy for all mobile applications published by smvodela. Your data stays on your device." />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                   Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      color: #2d2d2d;
+      background: #f5f5f7;
+      padding: 40px 20px 80px;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 16px rgba(0,0,0,.09);
+      overflow: hidden;
+    }
+
+    /* ── Header ───────────────────────────────────────── */
+    .header {
+      background: linear-gradient(135deg, #0d0025 0%, #1a0040 100%);
+      padding: 48px 48px 40px;
+      color: #fff;
+    }
+    .header-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #c9a84c;
+      margin-bottom: 12px;
+    }
+    .header h1 {
+      font-size: 32px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      letter-spacing: -.3px;
+    }
+    .header-meta {
+      font-size: 14px;
+      color: rgba(255,255,255,.55);
+    }
+
+    /* ── Body ─────────────────────────────────────────── */
+    .body { padding: 48px; }
+
+    /* ── Key message box ──────────────────────────────── */
+    .callout {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-left: 4px solid #22c55e;
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin-bottom: 40px;
+    }
+    .callout-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+    .callout strong { display: block; font-size: 15px; margin-bottom: 4px; color: #15803d; }
+    .callout p { font-size: 14px; color: #166534; line-height: 1.6; }
+
+    .callout-note {
+      background: #fffbeb;
+      border-color: #fde68a;
+      border-left-color: #f59e0b;
+    }
+    .callout-note strong { color: #92400e; }
+    .callout-note p { color: #78350f; }
+
+    /* ── Sections ─────────────────────────────────────── */
+    h2 {
+      font-size: 19px;
+      font-weight: 700;
+      color: #0d0025;
+      margin: 40px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #f0eef7;
+    }
+    h2:first-of-type { margin-top: 0; }
+
+    p { font-size: 15px; color: #444; margin-bottom: 14px; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 14px;
+    }
+    ul li {
+      font-size: 15px;
+      color: #444;
+      padding: 10px 0 10px 20px;
+      border-bottom: 1px solid #f5f5f7;
+      position: relative;
+    }
+    ul li:last-child { border-bottom: none; }
+    ul li::before {
+      content: '›';
+      position: absolute;
+      left: 0;
+      color: #c9a84c;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 1.4;
+    }
+    ul li strong { color: #1a1a1a; }
+
+    /* Permission badge rows */
+    .perm-table { width: 100%; border-collapse: collapse; margin-bottom: 14px; font-size: 14px; }
+    .perm-table th {
+      text-align: left;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #999;
+      padding: 8px 12px;
+      border-bottom: 2px solid #f0f0f0;
+    }
+    .perm-table td {
+      padding: 12px 12px;
+      border-bottom: 1px solid #f5f5f7;
+      color: #444;
+      vertical-align: top;
+    }
+    .perm-table tr:last-child td { border-bottom: none; }
+    .perm-table td:first-child { font-weight: 600; color: #1a1a1a; white-space: nowrap; width: 140px; }
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 100px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+    .badge-opt  { background: #f0f9ff; color: #0369a1; border: 1px solid #bae6fd; }
+    .badge-req  { background: #fef9ee; color: #92400e; border: 1px solid #fde68a; }
+
+    /* ── Contact ──────────────────────────────────────── */
+    .contact-box {
+      background: #fafafa;
+      border: 1px solid #ececec;
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin-top: 12px;
+    }
+    .contact-box a { color: #6d28d9; text-decoration: none; font-weight: 600; }
+    .contact-box a:hover { text-decoration: underline; }
+
+    /* ── Footer ───────────────────────────────────────── */
+    footer {
+      background: #fafafa;
+      border-top: 1px solid #ececec;
+      padding: 24px 48px;
+      font-size: 13px;
+      color: #aaa;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    footer a { color: #aaa; text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .header, .body { padding: 28px 24px; }
+      footer { padding: 20px 24px; }
+      h2 { font-size: 17px; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Privacy Policy</h1>
-        <p>Effective Date: May 22, 2024</p>
 
-        <p>This privacy policy applies to all mobile applications from this site for Android and iOS. Our primary philosophy is simple: <strong>Your data stays on your device.</strong></p>
+<div class="container">
 
-        <div class="highlight">
-            <strong>Summary:</strong> We do not collect, store, or transmit any personal information, photos, or videos to external servers. All processing is performed locally on your device.
-        </div>
+  <!-- ── Header ─────────────────────────────────────────── -->
+  <div class="header">
+    <div class="header-label">smvodela · Mobile Apps</div>
+    <h1>Privacy Policy</h1>
+    <div class="header-meta">Effective date: 21 May 2026 &nbsp;·&nbsp; Applies to all apps published by smvodela</div>
+  </div>
 
-        <h2>1. Data Collection & Usage</h2>
-        <p>We do not collect any personally identifiable information (PII). The app does not require a user account, and we do not use any third-party analytics or advertising SDKs that track your identity.</p>
+  <!-- ── Body ───────────────────────────────────────────── -->
+  <div class="body">
 
-        <h2>2. Permissions Explained</h2>
-        <p>To provide its core functionality, the app requests the following permissions:</p>
-        <ul>
-            <li><strong>Camera:</strong> Used solely to capture photos/videos within the app for processing. The live feed and captured images are processed in real-time and are never uploaded.</li>
-            <li><strong>Storage (Read/Write):</strong> Used to allow you to select existing photos from your gallery or save processed images back to your device. On Android 13+, we use specific media permissions to ensure we only access what is necessary.</li>
-            <li><strong>Internet:</strong> Used only for [mention use case, e.g., "fetching template updates" or "API calls"]. No user media is ever transmitted over this connection.</li>
-        </ul>
-
-        <h2>3. Third-Party Services</h2>
-        <p>The app may use the Flutter engine and standard system plugins. These tools do not collect personal data through our implementation. [Optional: If using Google AdMob or Firebase, list them here].</p>
-
-        <h2>4. Data Retention</h2>
-        <p>Since we do not collect data, we do not store any of your personal information on our servers. Any files created by the app remain on your device until you choose to delete them or uninstall the app.</p>
-
-        <h2>5. Contact Us</h2>
-        <p>If you have any questions regarding privacy while using the app, please contact us at: <br>
-        <strong>smvodela@gmail.com</strong></p>
+    <div class="callout">
+      <div class="callout-icon">🔒</div>
+      <div>
+        <strong>Your data stays on your device.</strong>
+        <p>All apps published under the smvodela developer account store your content — including photos, notes, goals, journal entries, and personal settings — exclusively on your device. We do not run servers that receive or store your personal data, and we do not require you to create an account.</p>
+      </div>
     </div>
 
-    <footer>
-        &copy; 2024 [Your Name/Company]. All rights reserved.
-    </footer>
+    <!-- 1 ─────────────────────────────────────────────── -->
+    <h2>1. Who We Are</h2>
+    <p>This policy covers all mobile applications published by <strong>smvodela</strong> on the Apple App Store and Google Play Store. Each app may have a slightly different feature set, but they all share the same core privacy principles described in this document.</p>
+    <p>If you have a question specific to a particular app, please use the contact details in section 8.</p>
+
+    <!-- 2 ─────────────────────────────────────────────── -->
+    <h2>2. Data We Do Not Collect</h2>
+    <p>We do not collect, process, or store any of the following on any external server:</p>
+    <ul>
+      <li>Your name, email address, or any account credentials</li>
+      <li>Photos, images, or videos you select or capture inside the app</li>
+      <li>Text you write (notes, journal entries, affirmations, goals)</li>
+      <li>Location data</li>
+      <li>Device identifiers or advertising IDs through our own systems</li>
+      <li>Contacts, calendars, or health data</li>
+    </ul>
+
+    <!-- 3 ─────────────────────────────────────────────── -->
+    <h2>3. Data Stored on Your Device</h2>
+    <p>All content you create within our apps — boards, images, entries, tasks, preferences, and settings — is stored locally in your device's private app storage. This data is:</p>
+    <ul>
+      <li><strong>Private by default</strong> — accessible only by the app itself on your device</li>
+      <li><strong>Not backed up to our servers</strong> — iCloud or Google Drive backups are controlled entirely by your device settings, not by us</li>
+      <li><strong>Deleted when you uninstall</strong> — removing the app permanently deletes all locally stored data</li>
+    </ul>
+
+    <!-- 4 ─────────────────────────────────────────────── -->
+    <h2>4. Device Permissions</h2>
+    <p>Depending on the app, some or all of the following permissions may be requested. Each permission is only requested when the relevant feature is used:</p>
+
+    <table class="perm-table">
+      <thead>
+        <tr>
+          <th>Permission</th>
+          <th>Why it is needed</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Camera <span class="badge badge-opt">optional</span></td>
+          <td>Lets you take a photo directly inside the app. The image is saved to your device only and is never uploaded.</td>
+        </tr>
+        <tr>
+          <td>Photo Library <span class="badge badge-opt">optional</span></td>
+          <td>Lets you choose an existing image from your gallery to use within the app. We read only the image you select; your full library is not accessed.</td>
+        </tr>
+        <tr>
+          <td>Notifications <span class="badge badge-opt">optional</span></td>
+          <td>Lets the app send you a local daily reminder that you configure yourself. No notification content is transmitted to any server.</td>
+        </tr>
+        <tr>
+          <td>Internet <span class="badge badge-opt">optional</span></td>
+          <td>Used only where an app feature requires it (see section 5). Never used to transmit your personal content or media.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>You may revoke any permission at any time in your device's Settings app. Revoking a permission disables only the associated feature; the rest of the app continues to function normally.</p>
+
+    <!-- 5 ─────────────────────────────────────────────── -->
+    <h2>5. Internet &amp; API Connections</h2>
+    <p>Most of our apps work entirely offline. Where an app does connect to the internet, the connection falls into one of the following categories:</p>
+    <ul>
+      <li><strong>Advertising</strong> — Some free apps display ads served by <strong>AppLovin MAX</strong>. AppLovin may collect a device advertising identifier (IDFA/GAID) and limited device information to serve contextual ads. See <a href="https://www.applovin.com/privacy/" target="_blank" rel="noopener">AppLovin's Privacy Policy</a> for full details. You can limit ad tracking at any time in your device settings.</li>
+      <li><strong>External APIs for app features</strong> — Where a specific feature requires an external API call (for example, fetching content or processing a request), only the minimum data necessary to fulfil that feature is sent. No personal photos, files, or journal content are ever transmitted as part of these calls.</li>
+      <li><strong>In-app purchases</strong> — Purchase transactions are handled entirely by Apple (App Store) or Google (Play Store). We do not receive or store your payment details.</li>
+    </ul>
+
+    <div class="callout callout-note">
+      <div class="callout-icon">ℹ️</div>
+      <div>
+        <strong>What we never send over the internet</strong>
+        <p>Regardless of the feature, we never transmit your photos, images, journal text, board content, goals, or any media you have added to any of our apps. Internet connections are used only for the specific, limited purposes listed above.</p>
+      </div>
+    </div>
+
+    <!-- 6 ─────────────────────────────────────────────── -->
+    <h2>6. Children's Privacy</h2>
+    <p>Our apps are intended for users aged 13 and over. We do not knowingly collect personal data from children under 13. If you are a parent or guardian and believe your child has provided personal information through one of our apps, please contact us and we will address it promptly.</p>
+
+    <!-- 7 ─────────────────────────────────────────────── -->
+    <h2>7. Changes to This Policy</h2>
+    <p>We may update this policy from time to time to reflect changes in our apps or applicable law. When we make a material change, we will update the effective date at the top of this page. We encourage you to review this policy periodically. Continued use of any of our apps after a change is posted constitutes your acceptance of the updated policy.</p>
+
+    <!-- 8 ─────────────────────────────────────────────── -->
+    <h2>8. Contact Us</h2>
+    <p>If you have any questions, concerns, or requests regarding this privacy policy or the data practices of any of our apps, please contact us:</p>
+    <div class="contact-box">
+      <strong>smvodela</strong><br />
+      <a href="mailto:smvodela@yahoo.com">smvodela@yahoo.com</a><br />
+      <span style="font-size:13px; color:#888; margin-top:6px; display:block;">We aim to respond within 5 business days.</span>
+    </div>
+
+  </div><!-- /body -->
+
+  <!-- ── Footer ─────────────────────────────────────────── -->
+  <footer>
+    <span>&copy; 2026 smvodela. All rights reserved.</span>
+    <span>Hosted at <a href="https://smvodela-sys.github.io/privacy-policy/">smvodela-sys.github.io/privacy-policy</a></span>
+  </footer>
+
+</div>
+
 </body>
 </html>
