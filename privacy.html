@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Privacy Policy — My Other Car</title>
+<meta name="description" content="How My Other Car handles your data: it doesn't. No servers, no account, no tracking." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/png" href="../favicon.png" />
+<link href="legal.css" rel="stylesheet" />
+</head>
+<body>
+<main>
+  <nav class="nav">
+    <a href="../index.html">&larr; My Other Car</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="eula.html">EULA</a>
+  </nav>
+
+  <p class="eyebrow">Legal</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 6 September 2026</p>
+
+  <p>
+    My Other Car ("the app", "we", "us") is a photo app that places you behind
+    the wheel of a dream car. You take a selfie, describe the car you want in
+    your own words, and an AI image model that <strong>you</strong> connect with
+    your own API key does the rest. This policy explains what happens to your
+    data. The short version: we don't run servers, and we never receive your
+    selfie, your description, or your key.
+  </p>
+
+  <h2>What we collect</h2>
+  <p>
+    <strong>Nothing on our own infrastructure.</strong> We have no backend, no
+    user accounts, and no analytics SDK. We cannot see your photos, your prompts,
+    your gallery, or your API key, because none of it is ever sent to us.
+  </p>
+
+  <h2>Data that stays on your device</h2>
+  <ul>
+    <li><strong>Your API key</strong> is stored in the operating system's secure
+      keystore (iOS Keychain / Android Keystore). It never leaves the device
+      except in requests your device makes directly to the AI provider you
+      chose.</li>
+    <li><strong>Your selfie, the vehicle description you write, and every
+      generated image</strong> are stored in the app's private storage on your
+      device. Deleting the app, or using "Delete all my data" in Settings,
+      removes them.</li>
+    <li><strong>App settings</strong> (such as the crash-reporting opt-out) are
+      stored locally.</li>
+  </ul>
+
+  <h2>Data sent to the AI provider you choose</h2>
+  <p>
+    When you generate an image, your device sends <strong>your selfie and the
+    vehicle description you wrote</strong> directly to the AI provider you
+    selected, authenticated with your own API key. That transfer is between you
+    and that provider, and it is governed by their policies, not ours. We are
+    not a party to it and never see the request.
+  </p>
+  <p>
+    You choose the provider in Settings, and you can reorder or switch any of
+    them off. The app supports:
+  </p>
+  <ul>
+    <li><strong>Google Gemini</strong> —
+      <a href="https://policies.google.com/privacy">Privacy Policy</a> ·
+      <a href="https://ai.google.dev/gemini-api/terms">Gemini API Terms</a></li>
+    <li><strong>OpenAI</strong> —
+      <a href="https://openai.com/policies/privacy-policy">Privacy Policy</a> ·
+      <a href="https://openai.com/policies/terms-of-use">Terms</a></li>
+    <li><strong>Hugging Face</strong> —
+      <a href="https://huggingface.co/privacy">Privacy Policy</a> ·
+      <a href="https://huggingface.co/terms-of-service">Terms</a></li>
+    <li><strong>Replicate</strong> —
+      <a href="https://replicate.com/privacy">Privacy Policy</a> ·
+      <a href="https://replicate.com/terms">Terms</a></li>
+    <li><strong>fal.ai</strong> —
+      <a href="https://fal.ai/privacy">Privacy Policy</a> ·
+      <a href="https://fal.ai/terms">Terms</a></li>
+  </ul>
+  <p>
+    Before upload, the app strips EXIF metadata — including GPS location — from
+    your selfie, and re-encodes it. The app also runs an on-device face check on
+    your selfie; that check counts faces only, produces no face data, and
+    nothing from it leaves your device.
+  </p>
+
+  <h2>Crash reporting</h2>
+  <p>
+    If you leave crash reporting enabled, unexpected errors are sent to Google
+    Firebase Crashlytics to help us fix bugs. These reports contain a stack
+    trace and device model only. The app scrubs anything resembling an API key
+    from every report before it is sent, and never includes your photos,
+    prompts, or personal information. You can turn crash reporting off in
+    Settings; there is no behavioural or usage analytics in the app.
+  </p>
+
+  <h2>Payments</h2>
+  <p>
+    The monthly subscription is processed by Apple or Google through their app
+    stores and by RevenueCat, which tells the app whether your subscription is
+    active. We never receive your card details. Image-generation charges are
+    billed by your chosen AI provider directly to your own API key; we do not
+    process, receive, or mark up that money.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    The app is rated 12+ / Teen and is not directed to children under 13.
+  </p>
+
+  <h2>Your rights</h2>
+  <p>
+    Because your data never reaches us, there is nothing for us to export or
+    delete on your behalf. You are in full control: "Delete all my data" in
+    Settings wipes your gallery, stored images, and API key from the device.
+    For data held by an AI provider, use that provider's own account
+    controls.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    If this policy changes materially, the updated date above will change and the
+    new version will be posted here before it takes effect.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this policy: <a href="mailto:r_vodela@yahoo.com">r_vodela@yahoo.com</a>.
+  </p>
+
+  <hr />
+  <footer>My Other Car is an independent app and is not affiliated with, endorsed by, or sponsored by Google LLC, OpenAI, Hugging Face, Replicate, fal.ai, or any vehicle manufacturer. Product names are trademarks of their respective owners. Vehicle marques referenced in the app are used only to describe styling.</footer>
+</main>
+</body>
+</html>

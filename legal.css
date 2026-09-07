@@ -1,0 +1,42 @@
+/* Shared styling for the three legal pages. Mirrors web/index.html tokens. */
+:root {
+  --bg-primary: #0A0A0C;
+  --bg-secondary: #16161A;
+  --divider: #2A2A30;
+  --text-primary: #F5F5F2;
+  --text-secondary: #9C9CA3;
+  --accent: #FF4B1F;
+  --maxw: 760px;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  padding: 48px 24px 96px;
+}
+main { max-width: var(--maxw); margin: 0 auto; }
+a { color: var(--accent); }
+.eyebrow {
+  font-size: 12px; font-weight: 600; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 8px;
+}
+h1 {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-weight: 700; font-size: 32px; letter-spacing: -0.01em;
+  line-height: 1.15; margin-bottom: 8px;
+}
+.updated { color: var(--text-secondary); font-size: 14px; margin-bottom: 32px; }
+h2 {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  font-weight: 600; font-size: 20px; margin: 32px 0 12px;
+}
+p, li { color: var(--text-primary); margin-bottom: 12px; }
+ul { padding-left: 22px; margin-bottom: 12px; }
+strong { color: var(--text-primary); }
+hr { border: 0; border-top: 1px solid var(--divider); margin: 40px 0; }
+.nav { margin-bottom: 40px; font-size: 14px; }
+.nav a { margin-right: 18px; }
+footer { color: var(--text-secondary); font-size: 13px; margin-top: 48px; }
